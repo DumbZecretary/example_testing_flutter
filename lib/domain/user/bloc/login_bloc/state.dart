@@ -24,7 +24,7 @@ class LoginState extends Equatable {
   LoginState initial() {
     return const LoginState(
       status: Status(
-        type: StatusType.idle,
+        type: StatusType.start,
       ),
     );
   }

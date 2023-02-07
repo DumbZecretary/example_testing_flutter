@@ -1,6 +1,3 @@
-import 'package:note_location_app/domain/sample/bloc/sample_bloc/bloc.dart';
-import 'package:note_location_app/domain/sample/bloc/sample_bloc/state.dart';
-import 'package:note_location_app/domain/sample/repository/pref.dart';
 import 'package:get_it/get_it.dart';
 import 'package:note_location_app/domain/tracking/bloc/track_bloc/bloc.dart';
 import 'package:note_location_app/domain/tracking/bloc/track_bloc/state.dart';

@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:note_location_app/common/status.dart';
 import 'package:note_location_app/domain/user/bloc/login_bloc/actions/save.dart';
 import 'package:note_location_app/domain/user/bloc/login_bloc/repository/pref.dart';
+import 'package:note_location_app/utils/debug.dart';
 
 import 'state.dart';
 import 'package:bloc/bloc.dart';
@@ -35,8 +36,8 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
       state.copyWith(
         status: Status(
           type: StatusType.error,
-          messages: state.status?.messages
-            ?..addAll(
+          messages: (state.status?.messages ?? {})
+            ..addAll(
               {
                 MessageType.local: event.message,
               },
