@@ -53,6 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 width: 200,
                 child: TextField(
+                  key: const Key("accountTextField"),
                   decoration: InputDecoration(
                     errorText: missingUsername
                         ? "Missing user name"
@@ -70,6 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 width: 200,
                 child: TextField(
+                  key: const Key("passwordTextField"),
                   obscureText: true,
                   decoration: InputDecoration(
                     labelText: "Password",
@@ -79,6 +81,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               GestureDetector(
+                key: const Key("loginBtn"),
                 onTap: () {
                   setState(() {
                     missingPassword = false;

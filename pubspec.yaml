@@ -34,6 +34,8 @@ dependencies:
   flutter_localizations:
     sdk: flutter
 
+  flutter_gherkin: ^2.0.0
+
   cupertino_icons: ^1.0.2
   get_it: ^7.2.0
   bloc: ^8.1.0
@@ -45,9 +47,13 @@ dependencies:
   flutter_screenutil: ^5.6.0
   shared_preferences: ^2.0.17
   location: ^4.4.0
+  glob: ^2.1.1
 
 dev_dependencies:
   flutter_test:
+    sdk: flutter
+  
+  flutter_driver:
     sdk: flutter
 
   flutter_lints: ^2.0.0

@@ -28,6 +28,7 @@ class ListScreen extends StatelessWidget {
             },
           ),
           title: Text(
+            key: const Key("messageLogin"),
             "Welcome ${context.watch<LoginBloc>().state.userName}",
             style: const TextStyle(
               color: Colors.blue,
